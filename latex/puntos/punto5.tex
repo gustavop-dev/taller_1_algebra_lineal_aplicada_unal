@@ -1,0 +1,40 @@
+\subsection{Dimensión del espacio conmutante}
+
+Sea $A\in\mathbb{R}^{n\times n}$ (o $\mathbb{C}^{n\times n}$). Denotemos por
+\[
+\mathcal{C}(A)=\{\,X\in\mathbb{R}^{n\times n}:\; XA=AX\,\}
+\]
+el \emph{conmutante} de $A$.  Su dimensión está gobernada por la
+estructura de Jordan (o, si $A$ es diagonalizable, por las multiplicidades
+algebraicas de sus valores propios).
+
+\subsubsection{Fórmula general}
+Sea $\sigma(A)=\{\lambda_1,\dots,\lambda_r\}$ el conjunto de valores propios
+distintos y sea $m_k$ la multiplicidad algebraica de $\lambda_k$. Entonces
+\[
+\dim \mathcal{C}(A)=\sum_{k=1}^{r} m_k^{\,2}.
+\]
+(Referencia: Hoffman–Kunze, \emph{Linear Algebra}, cap.~4.)
+
+\subsubsection{Dimensión mínima}
+\begin{itemize}
+  \item \textbf{Valor}: $\min \dim\mathcal{C}(A)=n$.
+  \item \textbf{Condición}: $A$ tiene $n$ valores propios \emph{distintos}
+        (espectro simple).  Entonces $m_k=1$ y la fórmula da
+        $\sum 1^{2}=n$.  Equivalente a que $A$ sea diagonalizable con
+        multiplicidad unitaria.
+\end{itemize}
+
+\subsubsection{Dimensión máxima}
+\begin{itemize}
+  \item \textbf{Valor}: $\max \dim\mathcal{C}(A)=n^{2}$.
+  \item \textbf{Condición}: $A$ es un múltiplo escalar de la identidad,
+        $A=\lambda I$. Entonces $XA=AX$ para toda matriz $X$, de modo que
+        $\mathcal{C}(A)=\mathbb{R}^{n\times n}$.
+\end{itemize}
+
+\subsubsection{Valores intermedios}
+Para espectros con repeticiones parciales ($1<m_k<n$) la dimensión toma
+valores intermedios conforme a la fórmula general.  Por ejemplo,
+$A=\operatorname{diag}(1,1,2)$ tiene multiplicidades $m_1=2$, $m_2=1$ y
+$\dim\mathcal{C}(A)=2^{2}+1^{2}=5$.

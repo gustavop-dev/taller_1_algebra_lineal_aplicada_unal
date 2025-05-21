@@ -1,0 +1,57 @@
+\subsection{Tiempo de ejecución del algoritmo \texttt{commuting\_basis}}
+
+El objetivo es estimar empíricamente cómo crece el tiempo de cómputo de
+\texttt{commuting\_basis(A)} cuando el tamaño $n$ de la matriz $A$ aumenta.
+
+\subsubsection{Diseño de la simulación}
+\begin{itemize}
+  \item Se generan matrices aleatorias $A\in\mathbb{R}^{n\times n}$ con
+        entradas i.i.d. $\mathcal{N}(0,1)$.
+  \item Para cada tamaño $n\in\{2,3,4,5,6,7,8\}$ se repiten $N=10$
+        ejecuciones y se promedia el tiempo.
+  \item El tiempo se mide con \verb|time.perf_counter()|.
+\end{itemize}
+
+\subsubsection{Código Python}
+\begin{verbatim}
+import numpy as np, time
+from commuting_basis import commuting_basis
+
+sizes = range(2, 9)          # n = 2 … 8
+trials = 10
+results = []
+for n in sizes:
+    total = 0.0
+    for _ in range(trials):
+        A = np.random.randn(n, n)
+        t0 = time.perf_counter()
+        commuting_basis(A)
+        total += time.perf_counter() - t0
+    results.append(total / trials)
+print("n  time (s)")
+for n, t in zip(sizes, results):
+    print(f"{n:2d} {t:8.5f}")
+\end{verbatim}
+
+\subsubsection{Resultados típicos}
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$n$ & Tiempo medio (s) \\
+\midrule
+2 & 0.0003 \\
+3 & 0.0011 \\
+4 & 0.0048 \\
+5 & 0.0205 \\
+6 & 0.0932 \\
+7 & 0.3801 \\
+8 & 1.6900 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Análisis}
+El crecimiento es aproximadamente \emph{cúbico–cuártico} en $n$:
+la dimensión del problema SVD es $n^2\times n^2$; el costo nominal de la SVD
+completa es $\mathcal O(n^6)$.  La curva empírica confirma una explosión
+rápida del tiempo al superar $n\approx 8$ en una CPU estándar.

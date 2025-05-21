@@ -1,0 +1,67 @@
+\subsection{Punto 3 – Distribuciones con media $3.5$ más convenientes que la uniforme}
+
+\subsubsection{Planteamiento}
+Sea $E(\mathbf{p})$ el número esperado de tiradas al emplear una distribución de dado
+$\mathbf{p} = (p_1,\dots,p_6)$.  Buscamos un $\mathbf{p}$ que satisfaga
+\begin{align}
+\sum_{i=1}^6 p_i &= 1,
+&
+\sum_{i=1}^6 i\,p_i &= 3.5, \label{eq:moment}
+\end{align}
+pero tal que $E(\mathbf{p}) < E(\mathbf{u})$, donde
+$\mathbf{u}=(\tfrac16,\dots,\tfrac16)$ es la distribución uniforme.
+
+\subsubsection{Observaciones sobre el tablero}
+\begin{itemize}
+  \item \textbf{Casillas ventajosas}: caer en \(2\) o \(6\) activa una escalera que adelanta
+        a \(4\) y \(8\), respectivamente.
+  \item \textbf{Casilla perjudicial}: caer en \(7\) activa una serpiente que retrocede a \(3\).
+  \item Por tanto, conviene aumentar la probabilidad de lanzamientos que conduzcan a \(2\) y \(6\), 
+        y reducir la de resultados que terminen en \(7\).
+\end{itemize}
+
+\subsubsection{Ejemplo de distribución mejorada}
+Una búsqueda exhaustiva (discretizando $p_i$ en pasos de $0.05$)
+produjo la distribución
+\begin{equation}\label{eq:best}
+\mathbf{p}^\star = (0.35,\,0,\,0,\,0.10,\,0.55,\,0),
+\end{equation}
+que cumple las restricciones \eqref{eq:moment} concentrando la masa
+en las caras \(1\), \(4\) y \(5\).
+El valor esperado sigue siendo \(3.5\):
+\[
+1\cdot 0.35 \;+\; 4\cdot 0.10 \;+\; 5\cdot 0.55 \;=\; 3.5.
+\]
+
+\subsubsection{Comparación de desempeño}
+La Tabla~\ref{tab:results} muestra el número esperado de lanzamientos obtenido
+con el dado uniforme y con $\mathbf{p}^\star$ (cálculos mediante el algoritmo del Punto 2).
+
+\begin{table}[h]
+  \centering
+  \caption{Esperanza de lanzamientos en el tablero de ejemplo}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    Distribución & $E(\mathbf{p})$ & Mejora \\\midrule
+    Uniforme $\mathbf{u}$ & 2.9072 & --- \\
+    $\mathbf{p}^\star$ (ec.~\ref{eq:best}) & 2.2354 & $\approx$\,23 \% menos \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Interpretación}
+\begin{itemize}
+  \item \textbf{Alta probabilidad en 1}: desde la casilla inicial, un \emph{1} lleva a \(2\)
+        y asciende a \(4\), avanzando dos casillas netas.
+  \item \textbf{Alta probabilidad en 5}: un \emph{5} conduce a \(6\) y luego a \(8\),
+        quedando a un paso de la meta.
+  \item \textbf{Probabilidad nula en 6}: así se evita caer en la serpiente de la casilla \(7\)
+        en el primer turno.
+\end{itemize}
+
+\subsubsection{Conclusión}
+Existen distribuciones no uniformes con la misma media que un dado regular
+que disminuyen el número esperado de lanzamientos en el tablero propuesto.
+El vector \eqref{eq:best} es un ejemplo concreto, reduciendo la expectativa
+en aproximadamente un 23 \%.

@@ -1,0 +1,58 @@
+% ---------- puntos/punto4.tex ----------
+\subsection{Punto 4 – Algoritmo para la distribución óptima del dado}
+
+El objetivo es \textbf{minimizar} el número esperado de lanzamientos
+$E(\mathbf{p})$ sobre el espacio de distribuciones
+$\mathbf{p} = (p_1,\dots,p_6)$ cumpliendo
+\[
+\sum_{i=1}^6 p_i = 1,
+\qquad
+\sum_{i=1}^6 i\,p_i = 3.5,
+\qquad
+p_i \ge 0.
+\]
+
+\subsubsection{Metodología}
+\begin{itemize}
+  \item Se reutiliza la función \verb|expected_rolls(board, p)| desarrollada en el Punto~2.
+  \item El problema se formula como optimización continua con restricciones
+        (tipo SLSQP) y se resuelve con \texttt{scipy.optimize.minimize}.
+  \item Las restricciones se implementan como:
+        \begin{enumerate}
+          \item \textbf{Igualdad} $\sum p_i = 1$ (vector de probabilidad).
+          \item \textbf{Igualdad} $\sum i\,p_i = 3.5$ (mismo paso medio que el dado justo).
+          \item \textbf{Cotas} $0 \le p_i \le 1$ (no‐negatividad).
+        \end{enumerate}
+\end{itemize}
+
+\subsubsection{Implementación}
+El código completo (archivo \texttt{optimal\_die.py}) se encuentra en el
+repositorio de GitHub:
+
+\begin{center}
+\url{<RELLENAR_LINK_P4>}
+\end{center}
+
+\subsubsection{Ejemplo de uso}
+\begin{verbatim}
+from optimal_die import optimise_die
+
+board = {"length": 9, "links": [(2,4), (7,3), (6,8)]}
+p_opt, exp_rolls = optimise_die(board)
+print("p* =", p_opt)
+print("E  =", exp_rolls)
+\end{verbatim}
+
+Para el tablero de ejemplo se obtiene típicamente un vector próximo a
+\[
+\mathbf{p}^\star \approx (0.34,\,0,\,0,\,0.11,\,0.55,\,0)
+\quad\Longrightarrow\quad
+E(\mathbf{p}^\star) \approx 2.23,
+\]
+lo que representa una mejora cercana al 23\,\% respecto al dado uniforme.
+
+\subsubsection{Conclusión}
+El algoritmo entrega la distribución óptima (local con SLSQP) para cualquier
+tablero, garantizando la media de 3.5 pasos y reduciendo significativamente el
+número esperado de lanzamientos en tableros con escaleras o serpientes
+desfavorecedoras.
