@@ -90,7 +90,7 @@ def commuting_basis_triangular(A: np.ndarray,
 # ─── Demo & timing comparison ────────────────────────────────────────
 if __name__ == "__main__":
     import time
-    from commuting_basis import commuting_basis  # original (SVD) version
+    from punto_inicial import commuting_basis  # original (SVD) version
 
     for n in range(2, 9):
         A = np.triu(np.random.randn(n, n))       # random triangular
