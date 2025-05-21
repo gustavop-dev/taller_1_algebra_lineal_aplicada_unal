@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.25)  21 MAY 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.25)  21 MAY 2025 18:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -425,7 +425,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7.
  (C:\Users\elcer\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (puntos/punto2.tex) (puntos/punto3.tex
+)) (puntos/punto2.tex
+Overfull \hbox (15.859pt too wide) in paragraph at lines 7--1
+\T1/lmr/m/it/10 Repositorio: []$\T1/lmtt/m/n/10 https : / / github . com / gustavop-[]dev / taller _ 1 _ algebra _ lineal _ aplicada _ unal / blob / master /
+ []
+
+) (puntos/punto3.tex
+Overfull \hbox (15.859pt too wide) in paragraph at lines 5--1
+\T1/lmr/m/it/10 Repositorio: []$\T1/lmtt/m/n/10 https : / / github . com / gustavop-[]dev / taller _ 1 _ algebra _ lineal _ aplicada _ unal / blob / master /
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -438,16 +447,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [1
 
-{C:/Users/elcer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]) (puntos/punto4.tex
+{C:/Users/elcer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]) (puntos/punto4.tex
 
-[2])
+[2{C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}])
 Overfull \hbox (29.35489pt too wide) in paragraph at lines 44--45
 []\T1/lmr/m/n/10 El có-di-go com-ple-to del al-go-rit-mo pa-ra cal-cu-lar una ba-se or-to-nor-mal del es-pa-cio con-mu-tan-te (\T1/lmtt/m/n/10 punto_inicial.py\T1/lmr/m/n/10 )
  []
 
-(puntos/punto5.tex) (puntos/punto6.tex
+(puntos/punto5.tex
 
-[3]
+[3]) (puntos/punto6.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -500,9 +509,9 @@ File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [4]) (puntos/punto7.tex
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1.
-) (puntos/punto8.tex
 
-[5])
+
+[5]) (puntos/punto8.tex)
 
 [6] (taller_alg_lin_apli.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -518,15 +527,15 @@ Package rerunfilecheck Info: File `taller_alg_lin_apli.out' has not changed.
 Here is how much of TeX's memory you used:
  11510 strings out of 473681
  182182 string characters out of 5719194
- 588814 words of memory out of 5000000
+ 587814 words of memory out of 5000000
  34348 multiletter control sequences out of 15000+600000
  639472 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,601b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on taller_alg_lin_apli.pdf (6 pages, 379441 bytes).
+Output written on taller_alg_lin_apli.pdf (6 pages, 380177 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 314 PDF objects out of 1000 (max. 8388607)
  50 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

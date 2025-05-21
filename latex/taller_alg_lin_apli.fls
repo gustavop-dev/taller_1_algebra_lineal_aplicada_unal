@@ -210,10 +210,10 @@ INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT .\puntos\punto4.tex
 INPUT .\puntos\punto4.tex
 INPUT puntos\punto4.tex
+INPUT C:\Users\elcer\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT .\puntos\punto5.tex
 INPUT .\puntos\punto5.tex
 INPUT puntos\punto5.tex

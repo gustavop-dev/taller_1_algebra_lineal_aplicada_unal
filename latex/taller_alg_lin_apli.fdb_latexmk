@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1747869197.03029 "c:/Users/elcer/Desktop/taller algebra lineal/taller_1_algebra_lineal_aplicada_unal/latex/taller_alg_lin_apli.tex" "taller_alg_lin_apli.pdf" "taller_alg_lin_apli" 1747869198.48648 0
+["pdflatex"] 1747870487.2632 "c:/Users/elcer/Desktop/taller algebra lineal/taller_1_algebra_lineal_aplicada_unal/latex/taller_alg_lin_apli.tex" "taller_alg_lin_apli.pdf" "taller_alg_lin_apli" 1747870488.59778 0
   "C:/Users/elcer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1744161776 82275 83e018d25732ce212c78d3871af9745a ""
   "C:/Users/elcer/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1732565088 11986955 ad2263746c6d72146349016392ce9401 ""
   "C:/Users/elcer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -133,18 +133,18 @@
   "C:/Users/elcer/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/elcer/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/elcer/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/elcer/Desktop/taller algebra lineal/taller_1_algebra_lineal_aplicada_unal/latex/taller_alg_lin_apli.tex" 1747869194 1855 0e5c81fa2773e8383c79bdb45c17e579 ""
-  "puntos/punto1.tex" 1747868864 288 169bd09a6da7329472678062753e2111 ""
-  "puntos/punto2.tex" 1747868871 193 ad2bb8459bd5a48143193912d1c5de1d ""
+  "c:/Users/elcer/Desktop/taller algebra lineal/taller_1_algebra_lineal_aplicada_unal/latex/taller_alg_lin_apli.tex" 1747870470 1951 025e7468bbcd416d151e1f1c895e1dca ""
+  "puntos/punto1.tex" 1747870388 389 e322a700af46a290f97bb8b6f3627f34 ""
+  "puntos/punto2.tex" 1747870401 295 cde8c922bedd90e43703000ec15b59a0 ""
   "puntos/punto3.tex" 1747868902 2825 40721bdf574f6c6010cb67207cba004f ""
-  "puntos/punto4.tex" 1747868928 2027 fdc620c359a2f1fcb73ad257105d0d52 ""
+  "puntos/punto4.tex" 1747870419 2128 32b36324030b749aa56d30c64f5a8b95 ""
   "puntos/punto5.tex" 1747869074 1670 24a359cdfc518e4827229b7ed70a3cf1 ""
   "puntos/punto6.tex" 1747869093 2136 7b1a2d569b79937476e0bc77447e3a76 ""
   "puntos/punto7.tex" 1747869124 1728 0fa205bad70aef0082c8c66190783be7 ""
-  "puntos/punto8.tex" 1747869187 240 1ef3049cd62e49ed669deed1c307dc96 ""
-  "taller_alg_lin_apli.aux" 1747869198 5380 858fdf1a079d362282c7123e2fb56fe6 "pdflatex"
-  "taller_alg_lin_apli.out" 1747869198 6174 6c73281d09de00673cda05b7d26301c5 "pdflatex"
-  "taller_alg_lin_apli.tex" 1747869194 1855 0e5c81fa2773e8383c79bdb45c17e579 ""
+  "puntos/punto8.tex" 1747870486 331 c062f92ea928c5ec0c93f68937ea5fb8 ""
+  "taller_alg_lin_apli.aux" 1747870488 5380 3c88c1738f93d255672e434302cdf444 "pdflatex"
+  "taller_alg_lin_apli.out" 1747870488 6174 6c73281d09de00673cda05b7d26301c5 "pdflatex"
+  "taller_alg_lin_apli.tex" 1747870470 1951 025e7468bbcd416d151e1f1c895e1dca ""
   (generated)
   "taller_alg_lin_apli.aux"
   "taller_alg_lin_apli.log"
